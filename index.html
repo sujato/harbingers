@@ -27,37 +27,34 @@
 
   <style>
 
-@font-face {
+@font-face
+{
     font-family: 'Crimson Pro';
-    src: url('fonts/crimsonpro-regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 
+    src: url('fonts/crimsonpro-regular.woff2') format('woff2');
+    font-display: swap;
 }
 
-
-
-
-@font-face {
+@font-face
+{
     font-family: 'Crimson Pro';
-    src: url('fonts/crimsonpro-italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
-    font-display: swap;
 
+    src: url('fonts/crimsonpro-italic.woff2') format('woff2');
+    font-display: swap;
 }
 
-
-
-
-@font-face {
+@font-face
+{
     font-family: 'Steelfish';
-    src: url('fonts/steelfis.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 
+    src: url('fonts/steelfis.woff2') format('woff2');
+    font-display: swap;
 }
 
 html
@@ -95,8 +92,6 @@ main
     padding-bottom: 50px;
 
     align-items: center;
-
-    
 }
 
 article
@@ -107,7 +102,8 @@ article
 }
 
 article p,
-article li{
+article li
+{
     font-size: 1.375rem;
 }
 
@@ -181,10 +177,15 @@ h6
 h1
 {
     font-size: 3rem;
+
+    color: #960100;
 }
+
 h2
 {
     font-size: 2rem;
+
+    color: #960100;
 }
 
 ol,
@@ -210,12 +211,12 @@ blockquote
 
 hr
 {
-    width: 50%;;
+    width: 50%;
     height: 1px;
     margin: 1em auto;
 
     border: none;
-    background-color: #e6e6e6;
+    background-color: #e6e6e6;;
 }
 
 header
@@ -235,9 +236,11 @@ header
     list-style: none;
 }
 
-a{
-    padding: .5em 0;
+a
+{
     display: inline-block;
+
+    padding: .5em 0;
 }
 
 a
@@ -252,14 +255,15 @@ a:not(:hover)
 
 aside
 {
-    font-size: small;
-
-    display: block;
-
     margin: 4em 0;
     padding: 0 1em 1em 1em;
 
     border: 1px solid #e6e6e6;
+}
+
+aside p
+{
+    font-size: small;
 }
 
 #top
@@ -273,29 +277,33 @@ aside
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
 }
 
 #top h1
 {
     font-family: steelfish;
     font-size: 10em;
+    line-height: .83;
 
     margin: 0;
 
+    letter-spacing: 2px;
     text-transform: uppercase;
 
     color: #960100;
-    letter-spacing: 2px;
+
     filter: sepia(20%);
-    line-height: .83;
 }
 
-#top h1 span{
+#top h1 span
+{
     font-size: .6em;
+
     display: block;
-    text-transform: lowercase;
+
     margin-left: -3em;
+
+    text-transform: lowercase;
 }
 
 @media (max-width: 600px)
@@ -311,8 +319,8 @@ aside
     font-family: steelfish;
     font-size: 6em;
 
-    text-transform: uppercase;
     letter-spacing: 2px;
+    text-transform: uppercase;
 
     color: #e79500;
 }
@@ -336,22 +344,20 @@ aside
 
     text-align: center;
 
-
-
     align-items: center;
-    
 }
 
 #space p
 {
     max-width: 24em;
-     padding: 0 1rem;
+    padding: 0 1rem;
 }
 
 #space ul
 {
+    padding: 1em 0;
+
     list-style-type: none;
-        padding: 1em 0;
 }
 
 #space li
@@ -399,7 +405,7 @@ aside
 <li><a class='call-to-action' href='https://www.lulu.com/en/us/shop/bhikkhu-sujato/the-harbingers/paperback/product-j785yy.html?page=1&pageSize=4'>Buy a paperback on demand from Lulu.com. They’ll print it and post it. Read it like books were meant to be read!</a></li>
 <li><a class='call-to-action' href='files/harbingers.epub'>Download a free EPUB, suitable for most ereaders.</a><small><a href='https://www.ala.org/news/sites/ala.org.news/files/content/mediapresscenter/CompetitionDigitalMarkets.pdf'>Kindle users click here.</a></small></li>
 <li><a class='call-to-action' href='files/harbingers.pdf'>Grab the PDF: this is what the book is made from.</a></li>
-<li>Or just scroll down and read it below.<br><br>☙</li>
+<li>Or just scroll down and read it below.<br><br><span style='color: #960100'>☙</span></li>
 </ul>
 </section>
 <main>

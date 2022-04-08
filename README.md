@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+# README.md
 
-You can use the [editor on GitHub](https://github.com/sujato/harbingers/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+View `.md` file in any markdown viewer or plain text editor.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The following is for anyone who wants it in a different form. 
 
-### Markdown
+## make pdf
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Working PDF generated with `pandoc`. Note that the template is included solely because the `mainmatter` command has to be removed for it to not add a blank page after the the title page. 
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+pandoc --pdf-engine lualatex --template=template.tex -H styles.tex harbingers.md -o harbingers.pdf
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+To add cover (doesn't put it on first page unfortunately), include `--include-before-body cover.tex`
 
-### Jekyll Themes
+## make cover pdf
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sujato/harbingers/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Lulu requires covers in PDF. But for some reason it was finnicky about the file size, even though the png source was exactly correct. Oh well, i solved it using:
 
-### Support or Contact
+```
+img2pdf cover_full_6x9.png -o cover_full_6x9.pdf --imgsize 915.4x666 --pagesize 915.4x666
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+This creates a PDF file with embedded PNG, no file conversion or loss.
+
+## make html
+
+```
+pandoc -s  --toc -H styles.css harbingers.md -o harbingers.html
+
+```
+
+This produces a pretty sweet and clean HTML document, with table of contents and included styles. 
+
+One thing to do by hand. For the licencing page, remove the {curly brackets} and wrap it in `<small>`.
+
+## make epub
+
+```
+pandoc harbingers.md -o harbingers.epub
+```

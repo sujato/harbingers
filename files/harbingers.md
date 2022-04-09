@@ -127,7 +127,7 @@ Many thanks are due to Bhikkhu Akaliko, with whom I tested the first drafts of m
 
 ***
 
-The cover photo “Out of the Pyro” is by  by Paul McIver and is used with his kind permission. It was featured in the Head On Photo Festival, the Walkley Foundation digital photojournalism exhibition, “The summer Australia burned, 2019–2020”, and the Black Summer exhibition at the Magnet Galleries, Melbourne. 
+The cover photo “Out of the Pyro” is by Paul McIver and is used with his kind permission. It was featured in the Head On Photo Festival, the Walkley Foundation digital photojournalism exhibition, “The summer Australia burned, 2019–2020”, and the Black Summer exhibition at the Magnet Galleries, Melbourne. 
 
 Here is the story behind the photo.
 
